@@ -61,6 +61,21 @@ app.post('/user/new', async(req, res) =>
     }
 })
 
+app.post('/user/request', async(req, res) =>
+{
+    try{
+        const input = req.body.input;
+
+        console.log(input)
+
+        res.status(200).json(dataToSend); 
+    }
+    catch (error) {
+        res.status(500).json({ message: "Server error" })
+    }
+})
+
+
 
 app.listen(PORT, () => // fire up express server
 {
