@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(86, 83, 166);
+    gap: 20px;
+    
+}
+
+.tile1{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
+.tile2{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+
+}
+
+.questionInput
+{
+    width: 100% !important;
+    box-sizing: border-box;
+    height: 300px !important;
+}
