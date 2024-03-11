@@ -14,6 +14,9 @@ function MainPage()
     const[input, setInput] = useState("");
 
     const[data, setData] = useState([]);
+
+
+    const[selectedIndex, setSelectedIndex] = useState(0);
     
     const handleSubmit = async (event) => 
     {
@@ -35,6 +38,11 @@ function MainPage()
         setData(data.data); 
     }
 
+    const selectCommand = (index) => 
+    {
+        setSelectedIndex(index);
+    }
+
     return (
         <div className = {classes.container}>
             <div className = {classes.tile1}>
@@ -50,12 +58,13 @@ function MainPage()
                         return (
                             <li key={index}>
                                 { item.command }
+                                <button onClick = {() => selectCommand(index)}>i</button>
                             </li>
                         )
                     })}
                 </ol>
-
-                <textarea readOnly>Mentaiko carbonara combines the richness of traditional carbonara with the umami punch of mentaiko (marinated cod roe). Creamy, savory, and slightly spicy, it's a delightful fusion that tantalizes taste buds. </textarea>
+                
+                <p>{data.length > 0 ? data[selectedIndex].explanation : "Explanation will be here"}</p>
 
             </div>
         </div>
