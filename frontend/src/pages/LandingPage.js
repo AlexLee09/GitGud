@@ -13,7 +13,8 @@ function LandingPage ()
 
     return (
         <div className={classes.container}>
-            <h1 className={classes.title}>Landing Page</h1>
+            {/* <h1 className={classes.title}>Landing Page</h1> */}
+            <p>This description is a description</p>
             <button onClick={toMainPage}>Main Page</button>
         </div>
     )
