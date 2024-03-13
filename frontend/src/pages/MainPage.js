@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import classes from './MainPage.module.css'; 
+import CommandItem from '../components/CommandItem';
 
 function MainPage()
 {
@@ -56,12 +57,10 @@ function MainPage()
                 <ol>
                     { data.length > 0 && data.map ((item, index) => { 
                         return (
-                            <li key={index}>
-                                { item.command }
-                                <button onClick = {() => selectCommand(index)}>i</button>
-                            </li>
+                            <CommandItem command={item.command} onClick={() => selectCommand(index)} />
                         )
                     })}
+                    { data.length === 0 && <CommandItem command="Your git commands will show up here!" onClick={() => {}}  /> }
                 </ol>
                 
                 <p>{data.length > 0 ? data[selectedIndex].explanation : "Explanation will be here"}</p>
