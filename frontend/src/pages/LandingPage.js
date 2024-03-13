@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { useNavigate } from 'react-router-dom';
+import classes from './LandingPage.module.css'; 
 
 function LandingPage () 
 {
@@ -8,15 +9,12 @@ function LandingPage ()
     const toMainPage = () =>
     {
         navigate("/main")
-
     }
 
-
     return (
-        <div>
-            <h1>Landing Page</h1>
-            <button onClick = {toMainPage}>Main Page</button>
-
+        <div className={classes.container}>
+            <h1 className={classes.title}>Landing Page</h1>
+            <button onClick={toMainPage}>Main Page</button>
         </div>
     )
 }
