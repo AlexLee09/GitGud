@@ -16,6 +16,8 @@ function LandingPage ()
             <h1 className={classes.title}>Landing Page</h1>
             <p>What goes up, goes down.</p>
             <p>At the bottom, the only way is up</p>
+            <p>At the bottom, the only way is up</p>
+            <p>At the bottom, the only way is up</p>
             <button onClick={toMainPage}>Main Page</button>
         </div>
     )
