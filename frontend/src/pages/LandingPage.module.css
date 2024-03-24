@@ -4,13 +4,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px; 
+    gap: 40px; 
 }
 
 .title
 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 1200;
-    font-size: 50px;
-    color: #fbfbfb;
+    font-weight: 1100;
+    font-size: 40px;
+    color: #d1d0c5;
+}
+
+.description
+{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    width: 70%;
 }
