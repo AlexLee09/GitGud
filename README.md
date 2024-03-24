@@ -23,7 +23,7 @@ npm install npm@latest -g
 ### Installation
 1. Clone the repo
 bash
-git clone https://github.com/your_username_/GitGud.git
+git clone https://github.com/AlexLee09/GitGud.git
 
 2. Install NPM packages for the frontend
 bash
